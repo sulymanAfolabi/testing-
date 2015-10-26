@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html ng-app xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../../Scripts/bootstrap.js"></script>
+    <link href="../../Content/bootstrap-theme.css" rel="stylesheet" />
+
+    <title></title>
+</head>
+<body>
+new data to {{do}}
+
+    <form name="form" class="form-horizontal">
+        <div class="control-group"  ng-class="">
+            <label class="control-label" for="name">Name</label> &nbsp;
+            <div class="controls">
+                <input type="text" ng-model="item.Name"  id="name" placeholder="Name" maxlength="20">
+            </div>
+        </div>
+
+        <div class="control-group" ng-class="">
+            <label class="control-label" for="department">Department</label> &nbsp;
+            <div class="controls">
+                <input type="text" ng-model="item.Department" id="name" placeholder="Department" maxlength="20">
+            </div>
+        </div>
+        <div class="control-group" ng-class="">
+            <label class="control-label" for="status">Status</label> &nbsp;
+            <div class="controls">
+                <input type="text" ng-model="item.Status" id="status" placeholder="Status" maxlength="15">
+            </div>
+        </div>
+        <div class="control-group" ng-class="">
+            <label class="control-label" for="salary">Salary</label> &nbsp;
+            <div class="controls">
+                <input type="number" ng-model="item.Salary" id="salary" placeholder="Salary" maxlength="20">
+            </div>
+        </div>
+        <p></p>
+        <div class=" form-action">
+            <button type="submit" ng-click="save()" class="btn btn-primary">{{do}}</button>
+            <button type="reset" class="btn btn-warning">Reset</button>
+        </div>
+       
+</form>
+</body>
+</html>
